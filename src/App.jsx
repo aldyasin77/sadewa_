@@ -5,6 +5,7 @@ import Toast from './components/Toast';
 import Dashboard from './pages/Dashboard';
 import SkemaTarif from './pages/SkemaTarif';
 import Ruangan from './pages/Ruangan';
+import { Analytics } from "@vercel/analytics/next"
 
 export default function App() {
   const [activePage, setActivePage] = useState('dashboard');
@@ -52,10 +53,10 @@ export default function App() {
   return (
     <div className="app-container">
       <Sidebar activePage={activePage} setActivePage={setActivePage} />
-      
+
       <div className="main-content">
         <Header title={currentInfo.title} subtitle={currentInfo.subtitle} />
-        
+
         <main className="page-body">
           {renderPage()}
         </main>

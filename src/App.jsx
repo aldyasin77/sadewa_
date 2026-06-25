@@ -5,7 +5,7 @@ import Toast from './components/Toast';
 import Dashboard from './pages/Dashboard';
 import SkemaTarif from './pages/SkemaTarif';
 import Ruangan from './pages/Ruangan';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
   const [activePage, setActivePage] = useState('dashboard');
@@ -73,6 +73,9 @@ export default function App() {
           />
         ))}
       </div>
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }

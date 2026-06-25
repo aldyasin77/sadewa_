@@ -12,9 +12,9 @@ export default function Sidebar({ activePage, setActivePage }) {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
-        <img src={Logo} alt="Logo SADEWA" className="sidebar-logo-img" />
+        <img src={Logo} alt="Logo SIPANDU" className="sidebar-logo-img" />
         <div className="sidebar-logo-text">
-          <span className="sidebar-logo-title">SADEWA</span>
+          <span className="sidebar-logo-title">SIPANDU</span>
           <span className="sidebar-logo-subtitle">Pemprov Jawa Barat</span>
         </div>
       </div>

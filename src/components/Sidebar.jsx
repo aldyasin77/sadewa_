@@ -1,5 +1,6 @@
 import React from 'react';
 import { LayoutDashboard, Receipt, Building2 } from 'lucide-react';
+import Logo from '../assets/Logo.png';
 
 export default function Sidebar({ activePage, setActivePage }) {
   const menuItems = [
@@ -11,8 +12,11 @@ export default function Sidebar({ activePage, setActivePage }) {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
-        <span className="sidebar-logo-title">SADEWA</span>
-        <span className="sidebar-logo-subtitle">Pemprov Jawa Barat</span>
+        <img src={Logo} alt="Logo SADEWA" className="sidebar-logo-img" />
+        <div className="sidebar-logo-text">
+          <span className="sidebar-logo-title">SADEWA</span>
+          <span className="sidebar-logo-subtitle">Pemprov Jawa Barat</span>
+        </div>
       </div>
       <nav className="sidebar-menu">
         {menuItems.map((item) => {

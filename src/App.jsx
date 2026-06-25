@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import SkemaTarif from './pages/SkemaTarif';
 import Ruangan from './pages/Ruangan';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function App() {
   const [activePage, setActivePage] = useState('dashboard');
@@ -74,6 +75,7 @@ export default function App() {
         ))}
       </div>
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
